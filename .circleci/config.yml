@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ghcr.io/Meowhins/docker:main
+      - image: ghcr.io/risti699/docker-dockeran:main
     steps:
       - run: git config --global user.name "meowhins"
       - run: git config --global user.email "cepoyt31@gmail.com"
