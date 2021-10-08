@@ -1,0 +1,9 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: ghcr.io/Meowhins/docker:main
+    steps:
+      - run: git config --global user.name "meowhins"
+      - run: git config --global user.email "cepoyt31@gmail.com"
+      - run: git clone --depth 1 "https://github.com/Meowhins/kernel_xiaomi_mojito" .
